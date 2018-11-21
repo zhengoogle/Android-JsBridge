@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android_JsBridge.iml" filepath="$PROJECT_DIR$/Android_JsBridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-JsBridge.iml" filepath="$PROJECT_DIR$/Android-JsBridge.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basefwlibrary/basefwlibrary.iml" filepath="$PROJECT_DIR$/basefwlibrary/basefwlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsbridgelibrary/jsbridgelibrary.iml" filepath="$PROJECT_DIR$/jsbridgelibrary/jsbridgelibrary.iml" />
     </modules>
   </component>
 </project>

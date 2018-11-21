@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.simple.jsbridge.bridge.view.WebViewBaseActivity">
+    tools:context=".view.HybridActivity">
 
-    <WebView
+    <com.simple.bridge.view.BridgeWebView
         android:id="@+id/wv_elm"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </WebView>
+    </com.simple.bridge.view.BridgeWebView>
 </LinearLayout>

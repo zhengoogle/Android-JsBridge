@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".test.exam1.DownloadExamActivity" />
         <activity android:name=".test.utils.log.LogExam1Activity" />
-        <activity android:name=".bridge.view.WebViewBaseActivity"></activity>
     </application>
 
 </manifest>

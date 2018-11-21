@@ -6,7 +6,6 @@ import android.os.Bundle;
 import com.simple.jsbridge.base.utils.PathUtils;
 import com.simple.fwlibrary.base.comp.FwPermissionActivity;
 import com.simple.fwlibrary.log.xlog.XLog;
-import com.simple.jsbridge.bridge.view.WebViewBaseActivity;
 
 
 public class MainActivity extends FwPermissionActivity {
