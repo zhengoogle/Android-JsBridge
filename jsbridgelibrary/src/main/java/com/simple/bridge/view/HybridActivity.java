@@ -37,8 +37,8 @@ public class HybridActivity extends AppCompatActivity {
             wvElm.getSettings().setAllowUniversalAccessFromFileURLs(true);
         }
         // 注入对象到网页
-        wvElm.addJavascriptInterface(new JsBridge(), "jsBridge");
-        wvElm.loadUrl("file:///android_asset/jsBridge/JsBridgePage01.html");
+        wvElm.addJavascriptInterface(new JsBridge(this, wvElm), "$jsBridge");
+        wvElm.loadUrl("http://192.168.31.153:8801/#/home");
     }
 
     @Override
@@ -52,7 +52,7 @@ public class HybridActivity extends AppCompatActivity {
      */
     @Override
     public void onBackPressed() {
-        if(wvElm.canGoBack()) {
+        if (wvElm.canGoBack()) {
             wvElm.goBack();
         } else {
             super.onBackPressed();

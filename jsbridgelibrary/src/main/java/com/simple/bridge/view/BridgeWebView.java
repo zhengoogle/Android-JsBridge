@@ -1,10 +1,12 @@
 package com.simple.bridge.view;
 
-import android.content.Context;
-import android.util.AttributeSet;
-import android.webkit.WebView;
+        import android.content.Context;
+        import android.util.AttributeSet;
+        import android.webkit.WebView;
 
-public class BridgeWebView extends WebView{
+        import com.simple.bridge.base.MLog;
+
+public class BridgeWebView extends WebView {
     public BridgeWebView(Context context) {
         super(context);
     }
@@ -17,5 +19,15 @@ public class BridgeWebView extends WebView{
         super(context, attrs, defStyleAttr);
     }
 
-
+    public void execWebCallback(final String id, final String res) {
+        post(new Runnable() {
+            @Override
+            public void run() {
+                String runRes = "javascript:window.onNativeCallback(" + id + ",\"" + res + "\")";
+                MLog.i(runRes);
+                loadUrl(runRes);
+//                loadUrl("javascript:window.onNativeCallback(" + id + ")");
+            }
+        });
+    }
 }
