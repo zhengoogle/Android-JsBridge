@@ -3,6 +3,7 @@ package com.simple.jsbridge;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.simple.bridge.view.HybridActivity;
 import com.simple.jsbridge.base.utils.PathUtils;
 import com.simple.fwlibrary.base.comp.FwPermissionActivity;
 import com.simple.fwlibrary.log.xlog.XLog;
@@ -37,7 +38,7 @@ public class MainActivity extends FwPermissionActivity {
 
     @Override
     public void loadDatas() {
-        Intent intent = new Intent(this,WebViewBaseActivity.class);
+        Intent intent = new Intent(this,HybridActivity.class);
         startActivity(intent);
         finish();
 
