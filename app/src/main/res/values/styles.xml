@@ -1,5 +1,14 @@
 <resources>
 
+    <!-- 2.蓝色主题 -->
+    <style name="AppBlueTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->

@@ -8,7 +8,9 @@ import com.simple.jsbridge.base.utils.PathUtils;
 import com.simple.fwlibrary.base.comp.FwPermissionActivity;
 import com.simple.fwlibrary.log.xlog.XLog;
 
-
+/**
+ * JSBridge&Proj02-VueDebug
+ */
 public class MainActivity extends FwPermissionActivity {
 
     @Override
