@@ -38,7 +38,7 @@ public class HybridActivity extends AppCompatActivity {
         }
         // 注入对象到网页
         wvElm.addJavascriptInterface(new JsBridge(this, wvElm), "$jsBridge");
-        String url = "http://localhost:8801/#/vue/cmd";
+        String url = "http://localhost:8801/#/hybrid/bridge";
         wvElm.loadUrl(url.replace("localhost","192.168.31.190"));
     }
 

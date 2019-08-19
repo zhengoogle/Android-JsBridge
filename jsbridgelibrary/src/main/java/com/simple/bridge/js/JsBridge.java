@@ -10,15 +10,24 @@ import com.simple.bridge.view.BridgeWebView;
 
 import java.lang.reflect.Method;
 
+/**
+ * jsBridge for WebAPPS
+ */
 public class JsBridge implements IBridge{
     private Context context;
-    private BridgeWebView bridgeWebView;
+    private BridgeWebView bridgeWebView; // WebView
 
     public JsBridge(Context context,BridgeWebView bridgeWebView) {
         this.context = context;
         this.bridgeWebView = bridgeWebView;
     }
 
+    /**
+     * jsBridge本地同步方法
+     * ---普通调用
+     * @param params 网页入参
+     * @return
+     */
     @Override
     @JavascriptInterface
     public String sync(String params) {
@@ -28,6 +37,12 @@ public class JsBridge implements IBridge{
         return new NativeTest().runSyncTasks(jsParams);
     }
 
+    /**
+     * jsBridge本地异步方法
+     * ---普通调用
+     * @param params 网页入参
+     * @return
+     */
     @Override
     @JavascriptInterface
     public String async(String params) {
@@ -37,6 +52,12 @@ public class JsBridge implements IBridge{
         return new NativeTest().runAsyncTasks(jsParams);
     }
 
+    /**
+     * jsBridge本地同步方法
+     * ---反射调用
+     * @param params 网页入参
+     * @return
+     */
     @Override
     @JavascriptInterface
     public String syncBridge(String params) {
@@ -54,6 +75,12 @@ public class JsBridge implements IBridge{
         return "";
     }
 
+    /**
+     * jsBridge本地异步方法
+     * ---反射调用
+     * @param params 网页入参
+     * @return
+     */
     @Override
     @JavascriptInterface
     public String asyncBridge(String params) {
